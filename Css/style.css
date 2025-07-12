@@ -1,0 +1,46 @@
+/* Hero Section */
+.hero-section {
+  background: url('../images/banner.jpg') center center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Hover effects */
+.hover-effect:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .overlay-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+}
+:target {
+            scroll-margin-top: 80px;
+        }
+
+        footer a:hover {
+            color: #ffc107 !important;
+            transform: scale(1.15);
+            transition: 0.3s ease;
+        }
